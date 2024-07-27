@@ -1,0 +1,129 @@
+@font-face {
+    font-family: 'RussoOne';
+    font-style: normal;
+    font-weight: 700;
+    src:
+        local('RussoOne'),
+        url('./../fonts/RussoOne-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'RussoOne';
+    font-style: normal;
+    font-weight: 700;
+    src:
+        local('RussoOne'),
+        url('./../fonts/RussoOne-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'MalgunGothic';
+    font-style: normal;
+    font-weight: 400;
+    src:
+        local('MalgunGothic'),
+        url('./../fonts/malgun-gothic.ttf') format('truetype');
+}
+
+
+:root {
+    --palette-black: #000000;
+    --palette-white: #FFFFFF;
+    --palette-swamp: #185C51;
+    --palette-swamp-light: #497E76;
+    --palette-turquoise: #5CA59B;
+
+    --font-h1: normal 700 36px/48px 'RussoOne', Helvetica, Arial, sans-serif;
+    --font-h2: normal 700 30px/48px 'RussoOne', Helvetica, Arial, sans-serif;
+    --font-h3: normal 700 24px/48px 'RussoOne', Helvetica, Arial, sans-serif;
+    --font-p: normal 400 18px/30px 'MalgunGothic', Helvetica, Arial, sans-serif;
+}
+
+.visually-hidden {
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+}
+
+.conveyers-list {
+    display: flex;
+    flex-direction: column;
+    margin-left: 148px;
+    margin-right: 220px;
+}
+
+.conveyer-item {
+    display: grid;
+    grid-template-columns: 720px 720px;
+    gap: 40px;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.conveyer-item:nth-child(even) .conveyer-image {
+    order: 2;
+}
+
+.conveyer-image {
+    height: 566px;
+    margin-right: 20px;
+}
+
+.conveyer-about {
+    display: flex;
+    flex-direction: column;
+}
+
+.reductors-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.text {
+    margin: 0;
+}
+
+.text-type-h1 {
+    font: var(--font-h1);
+}
+
+.text-type-h2 {
+    font: var(--font-h2);
+}
+
+.text-type-h3 {
+    font: var(--font-h3)
+}
+
+.text-type-p {
+    font: var(--font-p);
+}
+
+.conveyer-name {
+    font: var(--font-h2);
+}
+
+.conveyer-description {
+    font: var(--font-p);
+}
+
+.conveyer-advantages-title {
+    font: var(--font-h3);
+}
+
+.advantages-item {
+    font: var(--font-p);
+}
+
+.reductor-name {
+    font: var(--font-h3);
+}
+
+.reductor-description {
+    font: var(--font-p);
+}
